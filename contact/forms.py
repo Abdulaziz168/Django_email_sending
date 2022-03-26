@@ -4,6 +4,7 @@ from django.core.mail import send_mail
 
 
 class ContactForm(forms.Form):
+
     name = forms.CharField(max_length=120)
     email = forms.EmailField()
     inquiry = forms.CharField(max_length=70)
@@ -28,6 +29,7 @@ class ContactForm(forms.Form):
         return subject, msg
 
     def send(self):
+
         subject, msg = self.get_info()
 
         send_mail(
